@@ -72,7 +72,7 @@ else
 fi
 
 # Step 2: Invalidate tenant and check return code
-./pcli.exe -t "${tenant_id}" invalidate
+/mnt/c/Users/Ralph/pcli.exe -t "${tenant_id}" invalidate
 return_code=$?
 if [ ${return_code} -ne 0 ]; then
     echo "Error: Failed to invalidate tenant. Check tenant ID."
@@ -113,7 +113,7 @@ fi
 # Step 5: Proceed to upload metadata
 echo "Uploading pivoted data from pivoted_output.csv to tenant ${tenant_id}..."
 
-upload_command="./pcli.exe -t ${tenant_id} upload-model-meta --input pivoted_output.csv"
+upload_command="/mnt/c/Users/Ralph/pcli.exe -t ${tenant_id} upload-model-meta --input pivoted_output.csv"
 $upload_command
 
 # Step 6: Check if the upload was successful
