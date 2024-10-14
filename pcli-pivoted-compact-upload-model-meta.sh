@@ -12,9 +12,9 @@ usage() {
     echo " "
     echo "e.g.:"
     echo " "
-    echo "UUID,Cost,Source"
-    echo "123e4567-e89b-12d3-a456-426614174000,US$ 30.50,"
-    echo "456e1234-e12b-34d4-b789-123457890123,,Detroit Diesel"
+    echo "UUID,Cost,Source,Color"
+    echo "123e4567-e89b-12d3-a456-426614174000,US$ 30.50,,Blue"
+    echo "456e1234-e12b-34d4-b789-123457890123,,Detroit Diesel,Yellow"
     exit 1
 }
 
